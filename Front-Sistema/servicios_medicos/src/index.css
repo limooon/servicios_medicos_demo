@@ -1,0 +1,81 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+.calendar-container {
+    width: 100%;
+    max-width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .react-calendar {
+    width: 100%;
+    max-width: 100%;
+    border: 1px solid #dcdcdc;
+    border-radius: 10px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    font-family: Arial, sans-serif;
+  }
+  
+  .react-calendar__navigation {
+    background-color: #f0f0f0;
+    border-bottom: 1px solid #dcdcdc;
+    border-radius: 10px 10px 0 0;
+  }
+  
+  .react-calendar__navigation button {
+    color: #333;
+    font-weight: bold;
+  }
+  
+  .react-calendar__tile {
+    height: 50px; 
+    font-size: 14px;
+    border-radius: 6px;
+    transition: background-color 0.2s ease;
+  }
+  
+  .react-calendar__tile:hover {
+    background-color: #e0e0e0;
+  }
+  
+  .react-calendar__tile--active {
+    background-color: #4caf50;
+    color: white;
+    border-radius: 6px;
+  }
+  
+  .appointment-list {
+    padding: 0;
+    list-style: none;
+    margin: 10px 0;
+  }
+  
+  .appointment-item {
+    padding: 8px;
+    border-bottom: 1px solid #e0e0e0;
+    font-size: 14px;
+  }
+  
+  .no-appointments {
+    color: #999;
+    font-style: italic;
+  }
+
+  @media (max-width: 600px) {
+    .react-calendar {
+      font-size: 12px;
+    }
+  
+    .appointment-item {
+      font-size: 12px;
+    }
+  }
+
+
+
+
+  
