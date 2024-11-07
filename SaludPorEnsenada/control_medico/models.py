@@ -156,13 +156,12 @@ class SexoServidora(models.Model):
     apellidos_paterno = models.CharField(max_length=255,default='')
     apellidos_materno = models.CharField(max_length=255,default='')
     domicilio = models.CharField(max_length=255)
-    fotografia = models.ImageField(upload_to='sexo_servidoras/fotos/')
+    fotografia = models.ImageField(upload_to='servidoras/fotos/')
     fecha_nacimiento = models.DateField()
-    fotografia = models.ImageField(upload_to='sexo_servidoras/fotos/')
     estado_tarjeta = models.CharField(max_length=100, choices=[('Vigente', 'Vigente'), ('Vencida', 'Vencida')])
     descripcion_medica_actual = models.TextField(blank=True, null=True)
     historial_pagos = models.TextField(blank=True, null=True)  # ajustar con modelo de pagos
-    tarjeta_digital_qr = models.ImageField(upload_to='sexo_servidoras/qr/', blank=True, null=True)
+    tarjeta_digital_qr = models.ImageField(upload_to='servidoras/qr/', blank=True, null=True)
 
     def __str__(self):
         return self.nombre
